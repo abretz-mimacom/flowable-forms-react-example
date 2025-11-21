@@ -8,10 +8,14 @@ declare global {
     interface Window {
         flowable: {
             httpClientCustomConfiguration?: (io: any) => void;
+            endpoints?: {
+                baseUrl: string;
+            }
         };
     }
 }
 
+window.flowable.endpoints = { baseUrl: "/flowable-work" };
 window.flowable.httpClientCustomConfiguration = function (io) {
     //add custom headers
     io.interceptors.request.use(function (config: any) {
@@ -31,8 +35,8 @@ const FlowableAppViewDemo: React.FC = () => {
                 container="my-container"
                 showTopNavigationElements={true}
                 hideNavigationElements={true}
-                topNavigationBar={false}
-                showUserProfile={true}
+                topNavigationBar={true}
+                showUserProfile={false}
                 showLogin={false}
                 fullScreen={true}
                 disableRouting={false}

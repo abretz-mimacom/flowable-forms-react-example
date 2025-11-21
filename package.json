@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@flowable/forms": "3.14.3",
-    "@flowable/work": "3.14.4",
     "@flowable/work-views": "3.14.4",
     "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "13.4.0",
@@ -47,5 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8090/flowable-work/"
+  "proxy": "http://localhost:8090/"
 }
