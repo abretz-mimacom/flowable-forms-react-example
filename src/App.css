@@ -1,3 +1,103 @@
+:root {
+  --color-primary: #1100A8;
+  --color-primary-hover: #0D0085;
+  --color-outline: #1100A8;
+  --color-bg-secondary: #F3F3F3;
+  --color-footer: #0B007A;
+
+  --radius-pill: 30px;
+  --padding-button: 0.6rem 1.4rem;
+  --font-size-button: 1rem;
+  --flw-font-family: "Roboto";
+  --flw-switcher-base: #111e2c;
+  --flw-switcher-item-color: #b0b8bf;
+  --flw-switcher-item-color-hover: #ccd1d6;
+  --flw-switcher-selected-bgcolor: #1100A8;
+  --flw-switcher-selected-bgcolor-hover: #0D0085;
+  --flw-switcher-selected-color: #fff;
+  --flw-subMenu-bgcolor: #0b0f18;
+  --flw-subMenu-item-color: #b0b8bf;
+  --flw-subMenu-item-color-hover: #ccd1d6;
+  --flw-subMenu-selected-bgcolor: #111e2c;
+  --flw-subMenu-selected-color: #fff;
+  --flw-subMenu-selected-color-border: #b03b39;
+  --flw-subMenu-action-color: #b03b39;
+  --flw-subMenu-action-color-hover: #e54d42;
+  --flw-navigationBar-bgcolor: #fff;
+  --flw-color-lightgray: #ccc;
+  --flw-button-bg: #1100A8;
+  --flw-button-fg: #fff;
+  --flw-button-hover-bg: #d4d4d4;
+  --flw-button-hover-fg: #333;
+  --flw-button-primary-bg: #1100A8;
+  --flw-button-primary-fg: #fff;
+  --flw-button-primary-hover-bg: #0D0085;
+  --flw-button-primary-hover-fg: #fff;
+  --flw-forms-background-color: #fff;
+  --flw-forms-blue-background-color: #d8eafc;
+  --flw-forms-border-color: #e5e5e5;
+  --flw-forms-color: #1100A8;
+  --flw-forms-color-hover: #0D0085;
+  --flw-forms-color-secondary: #1100A8;
+  --flw-forms-debug-border: #ff0097;
+  --flw-forms-error-color: #f0506e;
+  --flw-forms-green-background-color: #edfbf6;
+  --flw-forms-label-text-color: #333;
+  --flw-forms-muted-background-color: #f8f8f8;
+  --flw-forms-muted-text-color: #999;
+  --flw-forms-orange-background-color: #fef5ee;
+  --flw-forms-orange-color: #faa05a;
+  --flw-forms-red-background-color: #fef4f6;
+  --flw-forms-selected-row-background-color: #ffd;
+  --flw-forms-shadow-color: #000;
+  --flw-forms-success-color: #32d296;
+  --flw-forms-text-color: #666;
+  --flw-late-task-color: #e74c3c;
+  --flw-unassigned-task-color: #cba837;
+  --flw-completed-task-color: #388e3c;
+  --flw-timeline-pending-color: #a8bac1;
+  --flw-work-link-color: #1100A8;
+
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+.flw__text__input {
+  color: #0B007A;
+}
+.flw__link--button__a {
+  border-radius: var(--radius-pill);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-button);
+  font-family: var(--flw-font-family);
+}
+.flw__link--button__a flw__link--disabled {
+  border-radius: var(--radius-pill);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-button);
+  font-family: var(--flw-font-family);
+}
+
+.flw__outcome-button__button {
+  border-radius: var(--radius-pill);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-button);
+  font-family: var(--flw-font-family);
+}
+
+.flw__rest-button__button {
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-button);
+  font-family: var(--flw-font-family);
+}
+
 .App {
   text-align: center;
 }

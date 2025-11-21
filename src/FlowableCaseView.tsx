@@ -1,5 +1,5 @@
 import './App.css';
-import { FlowableFlowApp } from '@flowable/work-views'
+import { FlowableCase } from '@flowable/work-views'
 import '@flowable/work-views/dist/index.css'
 import React from 'react';
 
@@ -27,27 +27,24 @@ window.flowable.httpClientCustomConfiguration = function (io) {
     })
 };
 
-interface FlowableAppViewDemoProps {
-    flowAppId: string;
+interface FlowableCaseViewDemoProps {
+    caseInstanceId: string;
 }
 
-const FlowableAppViewDemo: React.FC<FlowableAppViewDemoProps> = ({ flowAppId }) => {
+const FlowableCaseViewDemo: React.FC<FlowableCaseViewDemoProps> = ({ caseInstanceId }) => {
     return (
         <div>
-            <FlowableFlowApp
-                flowAppId={flowAppId}
-                container="my-container"
-                showTopNavigationElements={false}
-                hideNavigationElements={true}
-                topNavigationBar={false}
-                showUserProfile={false}
-                showLogin={false}
+            <FlowableCase
+                caseInstanceId={caseInstanceId}
                 fullScreen={true}
-                disableRouting={false}
+                hideNavigationElements={true}
                 hideLogo={true}
+                container={"case-view-container"}
+                topNavigationBar={false}
+                showTopNavigationElements={false}
             />
         </div>
     );
 }
 
-export default FlowableAppViewDemo;
+export default FlowableCaseViewDemo;
