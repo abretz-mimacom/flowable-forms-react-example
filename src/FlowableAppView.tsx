@@ -16,6 +16,8 @@ declare global {
 }
 
 window.flowable.endpoints = { baseUrl: "/flowable-work" };
+
+// Demo purposes only - pass web token or implement auth flow in real app
 window.flowable.httpClientCustomConfiguration = function (io) {
     //add custom headers
     io.interceptors.request.use(function (config: any) {

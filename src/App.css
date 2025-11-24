@@ -78,11 +78,12 @@
   font-size: var(--font-size-button);
   font-family: var(--flw-font-family);
 }
-.flw__link--button__a flw__link--disabled {
-  border-radius: var(--radius-pill);
-  border-radius: var(--radius-pill);
-  font-size: var(--font-size-button);
-  font-family: var(--flw-font-family);
+.flw__link--disabled .flw__link--button__a {
+  background: #b0b8bf;
+}
+.outcome-btn-div {
+  background: var(--color-bg-secondary);
+  padding-bottom: 42px;
 }
 
 .flw__outcome-button__button {
